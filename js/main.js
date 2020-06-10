@@ -67,3 +67,25 @@ console.log(another_person.addAgeInput(10))
     If the length is greater than ten console log "Big word". 
     If the length of the string is less than 10 console log "Small Number"
 */
+
+const isBig = (string) => {
+    return new Promise((resolve, reject) => {
+        if (string.length > 10){
+            resolve(true)
+        } else {
+            reject(false)
+        }
+    })
+}
+
+isBig('intoxicated').then((result) => {
+    console.log("Big Word!")
+}).catch((error) => {
+    console.log("Small Word :)")
+})
+
+isBig('tipsy').then((result) => {
+    console.log("Big Word!")
+}).catch((error) => {
+    console.log("Small Word :)")
+})
