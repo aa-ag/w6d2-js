@@ -25,6 +25,10 @@ for(let i = 0; i < Object.keys(person3).length; i++){
     console.log(Object.keys(person3)[i])
 }
 
+for(let i = 0; i < Object.keys(person3).length; i++){
+    console.log(Object.values(person3)[i])
+}
+
 //=======Exercise #2=========//
 /*
 Write an object prototype for a Person that has a name and age, has a
